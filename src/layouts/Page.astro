@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 interface Props {
   title?: string;
 }
@@ -7,88 +9,26 @@ const { title = 'Triad Elite Group' } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-neutral-100 dark:bg-neutral-950 font-sans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
+  <body class="m-0 p-0">
+    <header class="bg-primary-700 dark:bg-primary-600 text-white px-8 py-4">
+      <nav class="flex gap-6 mb-4">
+        <a href="/" class="text-white no-underline font-medium hover:underline hover:text-primary-100">Home</a>
+        <a href="/about" class="text-white no-underline font-medium hover:underline hover:text-primary-100">About</a>
       </nav>
-      <h1>Triad Elite Group</h1>
+      <h1 class="my-2 text-4xl">Triad Elite Group</h1>
     </header>
-    <main>
+    <main class="max-w-3xl mx-auto my-8 px-8 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 min-h-[60vh] py-8 rounded-lg shadow-md dark:shadow-2xl">
       <slot />
     </main>
-    <footer>
-      <p>&copy; 2025 Triad Elite Group. All rights reserved.</p>
+    <footer class="bg-neutral-800 dark:bg-neutral-950 text-white text-center p-6 mt-8 border-t border-neutral-700 dark:border-neutral-800">
+      <p class="m-0">&copy; 2025 Triad Elite Group. All rights reserved.</p>
     </footer>
   </body>
 </html>
-
-<style>
-  :global(html) {
-    font-family: system-ui, sans-serif;
-    background-color: #f6f6f6;
-  }
-  
-  :global(body) {
-    margin: 0;
-    padding: 0;
-  }
-
-  header {
-    background-color: #1e40af;
-    color: white;
-    padding: 1rem 2rem;
-  }
-
-  header h1 {
-    margin: 0.5rem 0;
-    font-size: 2rem;
-  }
-
-  nav {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-  }
-
-  main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 2rem;
-    background-color: white;
-    min-height: 60vh;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  footer {
-    background-color: #1e293b;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  footer p {
-    margin: 0;
-  }
-</style>
