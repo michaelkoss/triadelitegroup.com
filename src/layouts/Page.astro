@@ -20,7 +20,7 @@ const jsonLd = {
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="bg-neutral-100 dark:bg-neutral-950 font-sans">
+<html lang="en" class="bg-neutral-100 dark:bg-neutral-950 font-sans h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,7 +29,7 @@ const jsonLd = {
     <title>{title}</title>
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
-  <body class="m-0 p-0">
+  <body class="m-0 p-0 min-h-full flex flex-col">
     <header class="bg-black text-white px-8 py-2 lg:py-2">
       <nav class="flex flex-col lg:flex-row lg:items-end items-center justify-between gap-1 lg:gap-6">
         <a href="/" class="flex items-center shrink-0 pb-4 lg:pb-0">
@@ -43,7 +43,7 @@ const jsonLd = {
         </div>
       </nav>
     </header>
-    <main class="max-w-3xl mx-auto my-8 px-8 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 min-h-[60vh] py-8 rounded-lg shadow-md dark:shadow-2xl">
+    <main class="max-w-3xl mx-auto my-8 px-8 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 py-8 rounded-lg shadow-md dark:shadow-2xl flex-grow">
       <slot />
     </main>
     <footer class="bg-neutral-800 dark:bg-neutral-950 text-white p-6 mt-8 border-t border-neutral-700 dark:border-neutral-800">
