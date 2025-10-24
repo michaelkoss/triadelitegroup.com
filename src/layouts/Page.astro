@@ -17,12 +17,19 @@ const { title = 'Triad Elite Group' } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="m-0 p-0">
-    <header class="bg-primary-700 dark:bg-primary-600 text-white px-8 py-4">
-      <nav class="flex gap-6 mb-4">
-        <a href="/" class="text-white no-underline font-medium hover:underline hover:text-primary-100">Home</a>
-        <a href="/about" class="text-white no-underline font-medium hover:underline hover:text-primary-100">About</a>
+    <header class="bg-black text-white px-8 py-2 lg:py-2">
+      <nav class="flex flex-col lg:flex-row lg:items-end items-center justify-between gap-1 lg:gap-6">
+        <a href="/" class="flex items-center shrink-0 pb-4 lg:pb-0">
+          <img src="/img/triad-logo-white.png" alt="Triad Elite Group" class="h-32 w-auto object-contain" />
+        </a>
+        <div class="flex flex-wrap justify-center lg:justify-end gap-6 lg:gap-8">
+          <a href="/about" class="text-primary-400 no-underline font-medium uppercase tracking-wide hover:text-white transition-colors">About Us</a>
+          <a href="/capabilities" class="text-primary-400 no-underline font-medium uppercase tracking-wide hover:text-white transition-colors">Capabilities</a>
+          <a href="/industry" class="text-primary-400 no-underline font-medium uppercase tracking-wide hover:text-white transition-colors">Industry</a>
+          <a href="/leadership" class="text-primary-400 no-underline font-medium uppercase tracking-wide hover:text-white transition-colors">Leadership</a>
+          <a href="/connect" class="text-primary-400 no-underline font-medium uppercase tracking-wide hover:text-white transition-colors">Connect</a>
+        </div>
       </nav>
-      <h1 class="my-2 text-4xl">Triad Elite Group</h1>
     </header>
     <main class="max-w-3xl mx-auto my-8 px-8 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 min-h-[60vh] py-8 rounded-lg shadow-md dark:shadow-2xl">
       <slot />

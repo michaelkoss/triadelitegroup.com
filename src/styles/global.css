@@ -2,18 +2,18 @@
 
 /* Color Theme - Custom Color Palette */
 @theme {
-  /* Primary Brand Colors */
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a8a;
-  --color-primary-950: #172554;
+  /* Primary Brand Colors - Gold/Tan Accent */
+  --color-primary-50: #f7f5f1;
+  --color-primary-100: #ece8df;
+  --color-primary-200: #dad1bf;
+  --color-primary-300: #c5b69a;
+  --color-primary-400: #b3a07e;
+  --color-primary-500: #a28f65;
+  --color-primary-600: #8a7755;
+  --color-primary-700: #6f5f47;
+  --color-primary-800: #5a4d3b;
+  --color-primary-900: #4a4032;
+  --color-primary-950: #28221a;
 
   /* Neutral Colors */
   --color-neutral-50: #f8fafc;

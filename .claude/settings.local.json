@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebSearch",
-      "WebFetch(domain:docs.astro.build)"
+      "WebFetch(domain:docs.astro.build)",
+      "Skill(git-commit-message)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []

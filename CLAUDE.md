@@ -56,3 +56,4 @@ When adding new pages:
 3. Update navigation links in `src/layouts/Page.astro` if needed for main nav
 4. Use Tailwind utility classes for styling within MDX content
 - The triad current site is downloaded at ./docs/current.html
+- the logo in the header should always be set to maintain its aspect ratio
