@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { SITE_TITLE, SITE_DESCRIPTION, COMPANY_NAME, WEBSITE_URL } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION, COMPANY_NAME, WEBSITE_URL, LINKEDIN_URL, FACEBOOK_URL, INSTAGRAM_URL } from '../consts';
 
 interface Props {
   title?: string;
@@ -38,7 +38,6 @@ const jsonLd = {
         <div class="flex flex-wrap justify-center lg:justify-end gap-6 lg:gap-8">
           <a href="/about" class="text-primary-400 no-underline font-medium uppercase tracking-wide hover:text-white transition-colors">About Us</a>
           <a href="/capabilities" class="text-primary-400 no-underline font-medium uppercase tracking-wide hover:text-white transition-colors">Capabilities</a>
-          <a href="/industry" class="text-primary-400 no-underline font-medium uppercase tracking-wide hover:text-white transition-colors">Industry</a>
           <a href="/leadership" class="text-primary-400 no-underline font-medium uppercase tracking-wide hover:text-white transition-colors">Leadership</a>
           <a href="/connect" class="text-primary-400 no-underline font-medium uppercase tracking-wide hover:text-white transition-colors">Connect</a>
         </div>
@@ -47,8 +46,23 @@ const jsonLd = {
     <main class="max-w-3xl mx-auto my-8 px-8 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 min-h-[60vh] py-8 rounded-lg shadow-md dark:shadow-2xl">
       <slot />
     </main>
-    <footer class="bg-neutral-800 dark:bg-neutral-950 text-white text-center p-6 mt-8 border-t border-neutral-700 dark:border-neutral-800">
-      <p class="m-0">&copy; 2025 Triad Elite Group. All rights reserved.</p>
+    <footer class="bg-neutral-800 dark:bg-neutral-950 text-white p-6 mt-8 border-t border-neutral-700 dark:border-neutral-800">
+      <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-6">
+        <!-- Copyright - Left on lg+, Top on mobile -->
+        <p class="m-0 text-center lg:text-left">&copy; 2025 Triad Elite Group. All rights reserved.</p>
+        <!-- Social Links - Right on lg+, Bottom on mobile -->
+        <div class="flex justify-center lg:justify-end gap-4">
+          <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+            <img src="/img/linkedin-icon.png" alt="LinkedIn" class="w-10 h-10 object-contain" />
+          </a>
+          <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+            <img src="/img/facebook-icon.png" alt="Facebook" class="w-10 h-10 object-contain" />
+          </a>
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+            <img src="/img/instagram-icon.png" alt="Instagram" class="w-10 h-10 object-contain" />
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

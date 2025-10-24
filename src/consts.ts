@@ -15,7 +15,9 @@ export const DEFAULT_IMAGE_WIDTH = '320';
 export const DEFAULT_IMAGE_HEIGHT = '320';
 export const PRIMARY_EMAIL = 'info@triadelitegroup.com';
 export const WEBSITE_URL = 'https://triadelitegroup.com';
-export const LINKEDIN_URL = '';
+export const LINKEDIN_URL = 'http://www.linkedin.com/company/triadelitegroup';
+export const FACEBOOK_URL = 'https://www.facebook.com/triadelitegroup';
+export const INSTAGRAM_URL = 'http://www.instagram.com/triadelitegroup';
 export const REDDIT_URL = '';
 export const TIMEZONE = 'America/Chicago';
 
